@@ -1,6 +1,4 @@
-# \#\#\# 解释型问题
-
-
+# 解释型问题
 
 # 1.下面代码会不会报错？怎么解决？
 
@@ -9,7 +7,7 @@ const obj = {
     a: 1,
     b: 'string',
 };
-  
+
 obj.c = null;
 ```
 
@@ -19,7 +17,7 @@ obj.c = null;
 function foo (a: number) {
     return a + 1;
 }
- 
+
 foo.bar = 123;
 ```
 
@@ -27,7 +25,7 @@ foo.bar = 123;
 
 ```
 let foo = {};
-  
+
 for (let i = 0; i< 100; i++) {
     foo[String(i)] = i;
 }
@@ -48,7 +46,7 @@ const foo = fn;
 function getValue() {
     return this.value;
 }
-  
+
 getValue();
 ```
 
@@ -65,9 +63,9 @@ foo.set('bar', 1);
 function getProperty(obj, key) {
     return obj[key].toString();
 }
- 
+
 let x = { a: 1, b: 2, c: 3, d: 4 };
- 
+
 getProperty(x, "a");
 getProperty(x, "m");
 ```
